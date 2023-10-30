@@ -14,7 +14,7 @@ export function PaymentComponent({ checkoutId }: { checkoutId: string }) {
     const checkoutClient = new Checkout({
       checkoutId,
       containerId: containerId,
-      env: "production",
+      env: "sandbox",
     });
 
     checkoutClient.render();

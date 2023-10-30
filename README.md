@@ -8,7 +8,7 @@ An example integration of Fung's Payment Component. Using Nextjs 14, and showing
 # How to use 
 1. Clone the repository
 2. `cd example-payment-component` && `npm i`
-3. Update the `checkoutId` in `App.tsx` to a newly created Checkout ID
-4. Update the `environment` to `sandbox` or `production` depending on the environment you are currently testing
+3. Go to `app/page.tsx` and set the `checkoutId` to the `id` taken from response of `POST v2/checkout/createCheckout`.
+4. Optionally set the `environment` to `production` if you are testing your production environment. We strongly disencourage you to do so, as you can reliably test your integration using the `sandbox` environment.
 5. Run `npm run dev` to start the project
 6. Go to `localhost:3000` and do a test payment. 
